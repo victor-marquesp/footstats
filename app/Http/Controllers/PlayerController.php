@@ -7,12 +7,12 @@ use Illuminate\Http\Request;
 
 class PlayerController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+
     public function index()
     {
-        //
+        $players = Player::all();
+
+        return view('player.index', compact('players'));
     }
 
     /**
