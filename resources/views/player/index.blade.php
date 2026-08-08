@@ -3,9 +3,9 @@
     <x-slot:title>Jogadores</x-slot>
 
         
-    <div>
+    <div class="d-flex align-items-center gap-3">
         <h1>Jogadores</h1>
-        <button class="btn btn-primary">+ Jogador</button>
+        <a href="{{ route('players.create') }}" class="btn btn-primary">+ Jogador</a>
     </div>
 
     <table class="table">
